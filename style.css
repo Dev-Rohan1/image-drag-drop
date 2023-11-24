@@ -1,0 +1,50 @@
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --backgroundColor: #f6f7fb;
+    --backgroundImage: url(./image/alpona.jpg);
+}
+
+body{
+    background-color: var(--backgroundColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.card{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 420px;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.box{
+    width: 160px;
+    height: 160px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    cursor: move;
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+    background: var(--backgroundImage);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 7px;
+}
+
+.hovered{
+    border: 2px dashed #333;
+}
